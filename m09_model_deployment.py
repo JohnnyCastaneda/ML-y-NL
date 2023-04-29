@@ -5,7 +5,7 @@
 
 
 # Importación librerías
-get_ipython().run_line_magic('matplotlib', 'inline')
+#get_ipython().run_line_magic('matplotlib', 'inline')
 import pandas as pd
 import numpy as np
 from random import randrange
