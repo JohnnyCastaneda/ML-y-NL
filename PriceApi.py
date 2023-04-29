@@ -27,7 +27,7 @@ from sklearn.ensemble import AdaBoostRegressor
 
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import KFold
-#from m09_model_deployment import predict_price
+from m09_model_deployment import predict_price
 
 from flask import Flask
 from flask_restx import Api, Resource, fields
