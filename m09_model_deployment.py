@@ -17,7 +17,7 @@ import os
 def predict_price(year,mileage,state,make,model):
     dummie_state=str("State_")+state
     dummie_make=str("Make_")+make
-    MODELO = joblib.load(os.getcwd()+'\Modelo_prices.pkl') 
+    MODELO = joblib.load(os.getcwd()+'Modelo_prices.pkl') 
     dataTraining = pd.read_csv('https://raw.githubusercontent.com/davidzarruk/MIAD_ML_NLP_2023/main/datasets/dataTrain_carListings.zip')
     # eliminar espacios en la columna "Make"
     dataTraining["Make"] = dataTraining["Make"].apply(lambda x: x.strip())
