@@ -74,12 +74,12 @@ def predict_genre(plot):
     plot=remove_stopwords(plot)
     
     ###### Transformación de texto ##########    
-    vect = joblib.load('C:\\Users\\johnn\\Proyecto/vect.pkl')
+    vect = joblib.load(os.getcwd()+'Proyecto/vect.pkl')
     X_dtm = vect.transform([plot])
     X_dtm=X_dtm.toarray()
     
     ##### Carga del modelo y generación de predicción ####
-    MODELO = joblib.load('C:\\Users\\johnn\\Proyecto/clf.pkl')
+    MODELO = joblib.load(os.getcwd()+'Proyecto/clf.pkl')
     prediccion=MODELO.predict_proba(X_dtm)
     
     ##### Dar formato a la predicción ##### 
