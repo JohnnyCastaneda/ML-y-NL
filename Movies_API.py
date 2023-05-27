@@ -11,9 +11,9 @@ import numpy as np
 import nltk
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
-import matplotlib.pyplot as plt 
+#import matplotlib.pyplot as plt 
 import seaborn as sns
-import re
+#import re
 
 
 from sklearn.feature_extraction.text import CountVectorizer
@@ -23,15 +23,15 @@ from sklearn.ensemble import RandomForestRegressor, RandomForestClassifier
 from sklearn.metrics import r2_score, roc_auc_score
 from sklearn.model_selection import train_test_split
 
-from keras.layers import Activation
-from livelossplot import PlotLossesKeras
-from keras import backend as K
-import keras.optimizers as opts
-import tensorflow as tf
-from keras.models import Sequential
-from keras.layers import Dense
-from keras.layers import Dropout
-from keras.callbacks import EarlyStopping, ModelCheckpoint
+#from keras.layers import Activation
+#from livelossplot import PlotLossesKeras
+#from keras import backend as K
+#import keras.optimizers as opts
+#import tensorflow as tf
+#from keras.models import Sequential
+#from keras.layers import Dense
+#from keras.layers import Dropout
+#from keras.callbacks import EarlyStopping, ModelCheckpoint
 
 import joblib
 # Importación librerías
