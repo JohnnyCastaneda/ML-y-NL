@@ -38,6 +38,7 @@ import joblib
 from flask import Flask
 from flask_restx import Api, Resource, fields
 import os
+from predict_genre_movies import predict_genre
 os.chdir('..')
 
 
