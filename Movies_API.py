@@ -12,7 +12,7 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 #import matplotlib.pyplot as plt 
-import seaborn as sns
+#import seaborn as sns
 #import re
 
 
