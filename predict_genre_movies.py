@@ -92,7 +92,7 @@ def predict_genre(plot):
     retorno="El género más probable es: "+str(genero)+" con una probabilidad de: "+str(probabilidad)
 
     b=''
-    for columna, valor in zip(serie.index, serie.values):        
+    for columna, valor in zip(res.index, res.values):        
         b=b+' || '+(f'{columna}: {valor}')    
     
     return retorno+", la probabilidad de todos los géneros: "+b
