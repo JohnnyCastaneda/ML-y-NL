@@ -90,11 +90,9 @@ def predict_genre(plot):
     genero=res.idxmax(axis=1)[0]
     probabilidad=res.max(axis=1)[0]
     retorno="El género más probable es: "+str(genero)+" con una probabilidad de: "+str(probabilidad)
-        # Obtén la primera fila del DataFrame
-    fila = res.iloc[0]
+
     b=''
-    # Imprime los nombres de las columnas y los valores correspondientes
-    for columna, valor in fila.iteritems():
+    for columna, valor in zip(serie.index, serie.values):        
         b=b+' || '+(f'{columna}: {valor}')    
     
     return retorno+", la probabilidad de todos los géneros: "+b
